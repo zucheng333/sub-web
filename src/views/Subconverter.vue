@@ -28,7 +28,7 @@
               <div v-if="advanced === '2'">
                 <el-form-item label="后端地址:">
                   <el-autocomplete style="width: 100%" v-model="form.customBackend" :fetch-suggestions="backendSearch"
-                    placeholder="动动小手，（建议）自行搭建后端服务。例：http://192.168.1.123:25500/sub?">
+                    placeholder="动动小手，（建议）自行搭建后端服务。例：http://192.168.1.254:25500/sub?">
                     <el-button slot="append" @click="gotoGayhub" icon="el-icon-link">前往项目仓库</el-button>
                   </el-autocomplete>
                 </el-form-item>
@@ -211,7 +211,7 @@ export default {
           Surge2: "surge&ver=2",
         },
         backendOptions: [
-          {value: "http://192.168.1.123:25500/sub?"},
+          {value: "http://192.168.1.254:25500/sub?"},     
           {value: "https://api.v1.mk/sub?"},
           {value: "https://sub.d1.mk/sub?"},
           {value: "https://api.tsutsu.one/sub?"},
